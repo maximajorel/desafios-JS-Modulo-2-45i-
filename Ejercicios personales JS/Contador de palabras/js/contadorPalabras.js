@@ -1,9 +1,5 @@
-palabra = prompt("Por favor ingrese una cadena de texto");
-cantidadPalabras = 1;
-
-for (let i = 0; i < palabra.length; i++) {
-  if (palabra[i] === " ") {
-    cantidadPalabras++;
-  }
-}
+let frase = prompt("Por favor ingrese una cadena de texto");
+let palabras = frase.trim().split(" ");
+let cantidadPalabras = palabras.length;
+console.log(palabras);
 alert(`La cadena de texto tiene ${cantidadPalabras} palabras en total`);
