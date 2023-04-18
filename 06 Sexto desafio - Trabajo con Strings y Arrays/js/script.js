@@ -12,70 +12,66 @@ let fraseCompuesta = [];
 
 // Ahora toca analizar cada frase y contar sus caracteres.
 
-//Primero le doy el formato correspondiente al primer string, lo que hago aca es poner la primera letra en mayúsculas
+//Primero le doy el formato correspondiente a los strings, lo que hago aca es poner la primera letra en mayúsculas
+function formatearTexto(texto) {
+  let primeraLetra = texto[0].toUpperCase();
+  let restoTexto = texto.slice(1);
+  restoTexto = restoTexto.toLowerCase();
+  let textoConFormato = primeraLetra + restoTexto;
+  return textoConFormato;
+}
+let frase1Formateada = formatearTexto(frase1);
+let frase2Formateada = formatearTexto(frase2);
+let frase3Formateada = formatearTexto(frase3);
 
-let primeraLetra = frase1[0].toUpperCase();
-let restoTexto = frase1.slice(1);
-restoTexto = restoTexto.toLowerCase();
-let textoConFormato = primeraLetra + restoTexto;
+// * INICIO ANÁLISIS PRIMERA FRASE
 
 // Ahora vemos si tiene más de una oración, si es así, entonces pusheamos al array de frase compuesta.
 
-if (textoConFormato.includes(". ") || textoConFormato.includes(".")) {
-  textoConFormato = textoConFormato.toUpperCase();
-  fraseCompuesta.push(textoConFormato);
+if (frase1Formateada.includes(". ") || frase1Formateada.includes(".")) {
+  frase1Formateada = frase1Formateada.toUpperCase();
+  fraseCompuesta.push(frase1Formateada);
 }
 
 // Vemos la primera frase,comprobamos la cantidad de caracteres. Aquí con el if preguntamos. Che, esta frase tiene menos caracteres que 20, 20 caracteres o más que 20? En este caso solo analiza la frase1.
 
-if (textoConFormato.length < 20) {
-  fraseCorta.push(textoConFormato);
-} else if (textoConFormato.length >= 20) {
-  fraseLarga.push(textoConFormato);
+if (frase1Formateada.length < 20) {
+  fraseCorta.push(frase1Formateada);
+} else if (frase1Formateada.length >= 20) {
+  fraseLarga.push(frase1Formateada);
 }
 
-//Ahora le doy el formato correspondiente al segundo string, lo que hago aca es poner la primera letra en mayúsculas
-
-primeraLetra = frase2[0].toUpperCase();
-restoTexto = frase2.slice(1);
-restoTexto = restoTexto.toLowerCase();
-textoConFormato = primeraLetra + restoTexto;
+// * INICIO ANÁLISIS SEGUNDA FRASE
 
 // Ahora vemos si tiene más de una oración, si es así, entonces pusheamos al array de frase compuesta.
 
-if (textoConFormato.includes(". ") || textoConFormato.includes(".")) {
-  textoConFormato = textoConFormato.toUpperCase();
-  fraseCompuesta.push(textoConFormato);
+if (frase2Formateada.includes(". ") || frase2Formateada.includes(".")) {
+  frase2Formateada = frase2Formateada.toUpperCase();
+  fraseCompuesta.push(frase2Formateada);
 }
 
-// Vemos la primera frase,comprobamos la cantidad de caracteres. Aquí con el if preguntamos. Che, esta frase tiene menos caracteres que 20, 20 caracteres o más que 20? En este caso solo analiza la frase1.
+// Vemos la segunda frase,comprobamos la cantidad de caracteres. Aquí con el if preguntamos. Che, esta frase tiene menos caracteres que 20, 20 caracteres o más que 20? En este caso solo analiza la frase2.
 
-if (textoConFormato.length < 20) {
-  fraseCorta.push(textoConFormato);
-} else if (textoConFormato.length >= 20) {
-  fraseLarga.push(textoConFormato);
+if (frase2Formateada.length < 20) {
+  fraseCorta.push(frase2Formateada);
+} else if (frase2Formateada.length >= 20) {
+  fraseLarga.push(frase2Formateada);
 }
 
-//Por ultimo le doy el formato correspondiente al tercer string, lo que hago aca es poner la primera letra en mayúsculas
-
-primeraLetra = frase3[0].toUpperCase();
-restoTexto = frase3.slice(1);
-restoTexto = restoTexto.toLowerCase();
-textoConFormato = primeraLetra + restoTexto;
-
+// * INICIO ANÁLISIS TERCERA FRASE
 // Ahora vemos si tiene más de una oración, si es así, entonces pusheamos al array de frase compuesta.
 
-if (textoConFormato.includes(". ") || textoConFormato.includes(".")) {
-  textoConFormato = textoConFormato.toUpperCase();
-  fraseCompuesta.push(textoConFormato);
+if (frase3Formateada.includes(". ") || frase3Formateada.includes(".")) {
+  frase3Formateada = frase3Formateada.toUpperCase();
+  fraseCompuesta.push(frase3Formateada);
 }
 
-// Vemos la primera frase,comprobamos la cantidad de caracteres. Aquí con el if preguntamos. Che, esta frase tiene menos caracteres que 20, 20 caracteres o más que 20? En este caso solo analiza la frase1.
+// Vemos la tercera frase,comprobamos la cantidad de caracteres. Aquí con el if preguntamos. Che, esta frase tiene menos caracteres que 20, 20 caracteres o más que 20? En este caso solo analiza la frase3.
 
-if (textoConFormato.length < 20) {
-  fraseCorta.push(textoConFormato);
-} else if (textoConFormato.length >= 20) {
-  fraseLarga.push(textoConFormato);
+if (frase3Formateada.length < 20) {
+  fraseCorta.push(frase3Formateada);
+} else if (frase3Formateada.length >= 20) {
+  fraseLarga.push(frase3Formateada);
 }
 
 // Ahora mostramos los resultados por consola.
