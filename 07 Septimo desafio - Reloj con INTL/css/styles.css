@@ -3,13 +3,80 @@
   padding: 0;
   box-sizing: border-box;
 }
-body {
-  background-color: #252525;
-  color: white;
-  height: 100vh;
+/* Tema oscuro */
+.contenedor-principal-reloj-oscuro {
+  min-height: 100vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-family: Helvetica, Arial, sans-serif;
+  background-color: #252525;
+  color: rgb(255, 145, 0);
+  font-family: "Orbitron", sans-serif;
+  font-weight: regular;
   font-size: 6rem;
+  transition: background-color 0.6s, color 0.6s;
+}
+/* Tema Claro */
+
+.contenedor-principal-reloj-claro {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  color: dodgerblue;
+  font-family: "Orbitron", sans-serif;
+  font-weight: regular;
+  font-size: 6rem;
+  transition: background-color 0.6s, color 0.6s;
+}
+/* Boton oscuro */
+.boton-oscuro {
+  padding: 1rem;
+  border-radius: 50px;
+  outline: none;
+  border: solid white;
+  background-color: transparent;
+  color: white;
+  text-transform: uppercase;
+  font-family: Helvetica, sans-serif;
+  cursor: pointer;
+  font-weight: bold;
+}
+.boton-oscuro:hover,
+.boton-oscuro:focus {
+  background-color: white;
+  color: black;
+  transition: color 0.3s, background-color 0.3s;
+}
+
+/* Boton claro */
+.boton-claro {
+  padding: 1rem;
+  border-radius: 50px;
+  outline: none;
+  border: solid #252525;
+  background-color: transparent;
+  color: black;
+  text-transform: uppercase;
+  font-family: Helvetica, sans-serif;
+  cursor: pointer;
+  font-weight: bold;
+}
+.boton-claro:hover,
+.boton-claro:focus {
+  background-color: #252525;
+  color: white;
+  transition: color 0.3s, background-color 0.3s;
+}
+
+@media screen and (max-width: 425px) {
+  .contenedor-principal-reloj-oscuro {
+    font-size: 3rem;
+  }
+  .contenedor-principal-reloj-claro {
+    font-size: 3rem;
+  }
 }
