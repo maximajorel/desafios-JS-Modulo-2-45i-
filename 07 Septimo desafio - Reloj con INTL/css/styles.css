@@ -3,7 +3,36 @@
   padding: 0;
   box-sizing: border-box;
 }
+.contenedor-relojes {
+  position: relative;
+}
+.reloj1 {
+  color: #ff910068;
+  transition: color 0.6s;
+}
+.reloj2 {
+  color: white;
+  position: absolute;
+  top: -0.5rem;
+  left: -0.5rem;
+  z-index: 99;
+  transition: color 0.6s;
+}
+.reloj3 {
+  position: absolute;
+  top: -0.9rem;
+  left: -0.9rem;
+  z-index: 99;
+}
 /* Tema oscuro */
+.reloj-2-claro {
+  color: #252525;
+  position: absolute;
+  top: -0.5rem;
+  left: -0.5rem;
+  z-index: 99;
+  transition: color 0.6s;
+}
 .contenedor-principal-reloj-oscuro {
   min-height: 100vh;
   display: flex;
@@ -11,7 +40,7 @@
   align-items: center;
   justify-content: center;
   background-color: #252525;
-  color: rgb(255, 145, 0);
+  color: #ff9100;
   font-family: "Orbitron", sans-serif;
   font-weight: regular;
   font-size: 6rem;
@@ -44,8 +73,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: white;
-  color: dodgerblue;
+  background-color: #feeccf;
+  color: #ea4335;
   font-family: "Orbitron", sans-serif;
   font-weight: regular;
   font-size: 6rem;
@@ -77,9 +106,9 @@
   padding: 1rem;
   border-radius: 50px;
   outline: none;
-  border: solid #252525;
+  border: solid #ea4335;
   background-color: transparent;
-  color: black;
+  color: #ea4335;
   text-transform: uppercase;
   font-family: Helvetica, sans-serif;
   cursor: pointer;
@@ -87,19 +116,31 @@
 }
 .boton-claro:hover,
 .boton-claro:focus {
-  background-color: #252525;
+  background-color: #ea4335;
   color: white;
   transition: color 0.3s, background-color 0.3s;
 }
 
 @media screen and (max-width: 425px) {
-  .contenedor-principal-reloj-oscuro {
+  /* .contenedor-principal-reloj-oscuro {
     font-size: 3rem;
   }
   .contenedor-principal-reloj-claro {
     font-size: 3rem;
+  } */
+  .reloj1,
+  .reloj2,
+  .reloj3,
+  .reloj-2-claro,
+  .reloj {
+    font-size: 3rem;
   }
-  .title-reloj-oscuro {
+  .reloj3 {
+    top: -0.65rem;
+    left: -0.65rem;
+  }
+  .title-reloj-oscuro,
+  .title-reloj-claro {
     font-size: 1.5rem;
   }
 }
