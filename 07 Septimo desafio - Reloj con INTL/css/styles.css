@@ -17,6 +17,25 @@
   font-size: 6rem;
   transition: background-color 0.6s, color 0.6s;
 }
+/* Titulo Oscuro */
+
+.title-reloj-oscuro {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+  text-align: center;
+  text-transform: uppercase;
+  transition: color 0.6s;
+}
+/* Titulo Claro */
+.title-reloj-claro {
+  color: #252525;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+  text-align: center;
+  text-transform: uppercase;
+  transition: color 0.6s;
+}
 /* Tema Claro */
 
 .contenedor-principal-reloj-claro {
@@ -33,6 +52,7 @@
   transition: background-color 0.6s, color 0.6s;
 }
 /* Boton oscuro */
+
 .boton-oscuro {
   padding: 1rem;
   border-radius: 50px;
@@ -78,5 +98,8 @@
   }
   .contenedor-principal-reloj-claro {
     font-size: 3rem;
+  }
+  .title-reloj-oscuro {
+    font-size: 1.5rem;
   }
 }
