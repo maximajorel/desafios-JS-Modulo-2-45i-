@@ -7,7 +7,6 @@ let intl = Intl.DateTimeFormat("es-ar", {
 setInterval(() => {
   let reloj = intl.format(new Date());
   console.log(reloj);
-  // document.body.innerHTML = `${reloj}`;
   document.getElementById("reloj1-h3").innerHTML = reloj;
   document.getElementById("reloj2-h3").innerHTML = reloj;
   document.getElementById("reloj3-h3").innerHTML = reloj;
@@ -28,8 +27,6 @@ function cambiarTema() {
     titulo.classList.add("title-reloj-claro");
     reloj2.classList.remove("reloj2");
     reloj2.classList.add("reloj-2-claro");
-    // reloj2.classList.remove("reloj-2-oscuro");
-    // reloj2.classList.add("reloj2");
     switchButton.textContent = "Cambiar a tema oscuro";
   } else {
     main.classList.remove("contenedor-principal-reloj-claro");
