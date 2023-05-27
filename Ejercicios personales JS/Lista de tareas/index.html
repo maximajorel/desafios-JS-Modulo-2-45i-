@@ -15,7 +15,7 @@
   </head>
   <body class="body-tareas">
     <main class="contenedor-principal">
-      <div class="contenedor-formulario">
+      <div class="contenedor-formulario contenedor-info">
         <h2 class="titulo-lista-tareas">Lista de tareas</h2>
         <form
           id="formularioAgregar"
@@ -33,9 +33,14 @@
           <button class="btn btn-success" type="submit">Agregar tarea</button>
         </form>
       </div>
-      <div class="contenedor-tareas">
+      <div class="contenedor-tareas contenedor-info">
+        <h2>Tareas Pendientes</h2>
         <ul id="lista-de-tareas" class="lista"></ul>
       </div>
+      <aside class="tareas-completadas contenedor-info">
+        <h2>Tareas Completadas</h2>
+        <ul id="tareas-completadas"></ul>
+      </aside>
     </main>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"
