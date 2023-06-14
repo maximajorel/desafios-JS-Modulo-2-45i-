@@ -1,0 +1,45 @@
+:root {
+  --gris-oscuro: #252525;
+}
+.tituloBuscadorPaises {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  color: white;
+  background-color: var(--gris-oscuro);
+  margin-bottom: 2rem;
+}
+#resultadosBusqueda {
+  font-size: 16px;
+  margin: 1rem;
+}
+.resultados {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
+.contenedor-tabla {
+  display: flex;
+  flex-direction: column;
+  width: 80rem;
+  align-items: center;
+}
+.cabeceraTablaPaises {
+  background-color: var(--gris-oscuro);
+  color: white;
+}
+.nuevaBusqueda {
+  width: 20%;
+  padding: 0.5rem;
+  border: none;
+  background-color: var(--gris-oscuro);
+  color: white;
+  border-radius: 5px;
+}
+.nuevaBusqueda:hover,
+.nuevaBusqueda:focus {
+  background-color: white;
+  color: var(--gris-oscuro);
+  border: solid 1px var(--gris-oscuro);
+  transition: all 0.3s;
+}
